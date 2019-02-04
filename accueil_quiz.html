@@ -1,33 +1,131 @@
-<!doctype html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Plateforme Quiz | Accueil</title>
-    <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-    <!-- MDB content -->
+    <link rel="stylesheet" href="css/compiled-4.7.0.min.css">
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.0.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/mdb.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/homeStyle.css">
 </head>
-<body>
+<body class="hidden-sn mdb-skin">
+<header>
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav mdb-sidenav">
+        <ul class="custom-scrollbar list-unstyled">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light waves-effect waves-light">
+                    <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Submit blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">Submit listing</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Registration form</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">For bloggers</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">For authors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> About<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">Introduction</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">FAQ</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Write a message</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">FAQ</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Write a message</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">FAQ</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Write a message</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">FAQ</a>
+                                </li>
+                                <li><a href="#" class="waves-effect">Write a message</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!--/. Sidebar navigation -->
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+        </div>
+        <!-- Breadcrumb-->
+        <!-- <div class="breadcrumb-dn mr-auto">
+             <p>Material Design for Bootstrap</p>
+         </div> -->
+         <ul class="nav navbar-nav nav-flex-icons ml-auto">
+             <!--  <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light"><i class="fa fa-setting"></i> <span class="clearfix d-none d-sm-inline-block">parametre de compte</span></a>
+              </li>
+             <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+             </li> -->
+             <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"> <span class="clearfix d-none d-sm-inline-block">Liste des quiz</span></a>
+             </li>
+             <li class="nav-item avatar dropdown">
+                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                     <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0" alt="avatar image">
+                 </a>
+                 <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                     <a class="dropdown-item" href="#"> <i class="fa fa-user"></i> Mon compte</a>
+                     <a class="dropdown-item" href="#"> <i  class="fa fa-cog"></i> Parametre</a>
+                 </div>
+             </li>
+         </ul>
+     </nav>
+     <!-- /.Navbar -->
+</header>
+<!--/.Double navigation-->
 
 
-
-
-
-
-<!-- SCRIPTS -->
+<!-- script -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/compiled-4.7.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
-<script type="text/javascript">
-    // Animations
-    new WOW().init();
-</script>
+    <script type="text/javascript">
+        (function runJS() {// SideNav Initialization
+         $(".button-collapse").sideNav();})();
+    </script>
 </body>
 </html>
