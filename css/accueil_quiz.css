@@ -19,3 +19,7 @@ body{
 .img-quiz{
     background: linear-gradient(to right, rgba(158, 163, 168, 0), rgba(60, 200, 228, 0.7));
 }
+
+.copyright{
+    margin-top: 60px;
+}
