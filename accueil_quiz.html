@@ -124,7 +124,7 @@
                      <img class="card-img-top img-quiz" src="img/quiz_img/java.jpg" alt="Card image cap">
                  </div> -->
 
-                 <a class="btn-floating btn-action ml-auto bg-success"><i class="fas fa-chevron-right pl-1"></i></a>
+                 <a class="btn-floating btn-action ml-auto bg-success" data-toggle="modal" data-target="#modalVM"><i class="fas fa-chevron-right pl-1"></i></a>
                  <div class="view overlay">
                      <span>Nombre de questions : </span> <strong>100</strong>
                  </div>
@@ -166,7 +166,7 @@
                      <img class="card-img-top img-quiz" src="img/quiz_img/javascript.jpg" alt="Card image cap">
                  </div> -->
 
-                <a class="btn-floating btn-action ml-auto bg-success"><i class="fas fa-chevron-right pl-1"></i></a>
+                <a class="btn-floating btn-action ml-auto bg-success" data-toggle="modal" data-target="#modalVM"><i class="fas fa-chevron-right pl-1"></i></a>
                 <div class="view overlay">
                     <span>Nombre de questions : </span> <strong>100</strong>
                 </div>
@@ -191,7 +191,7 @@
     </div>
 
     <!--Modal: modalVM-->
-    <div class="modal fade" id="modalVM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalVM"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
 
             <!--Content-->
@@ -199,9 +199,13 @@
                 <!--Body-->
 
                 <!-- Modal header -->
-                <div class="text-center mb-2 mt-3">
+                <div class="modal-header text-center">
                     <h3>Détails du quiz</h3>
+                    <span class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </span>
                 </div>
+
                 <!-- Modal header -->
 
                 <table class="table table-bordered">
@@ -243,17 +247,13 @@
                         <td colspan="2">Point question incorrecte</td>
                         <td>0</td>
                     </tr>
-
                     </tbody>
                 </table>
 
                 <!--Footer-->
                 <div class="modal-footer justify-content-center flex-column flex-md-row">
-
-                    <a type="button" href="#" class="btn btn-success btn-rounded btn-md ml-4" data-dismiss="modal">Commencer</a>
-
+                    <a href="composition_quiz.html" class="btn btn-success btn-rounded btn-md ml-4" >Commencer</a>
                 </div>
-                    <small class="mb-3 text-danger">cliquer en déhors de cette fénêtre pour sortir</small>
                 <!--Footer-->
 
 
