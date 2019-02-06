@@ -65,7 +65,7 @@
     <!-- row -->
     <div class="row">
         <!-- Card -->
-        <div class="col-md-4 mb-4 ">
+        <div class="col-md-4 mb-4 wow fadeInLeft">
 
             <div class="card">
 
@@ -82,7 +82,7 @@
                    </a>
                </div> -->
 
-                <a class="btn-floating btn-action ml-auto bg-success"><i class="fas fa-chevron-right pl-1"></i></a>
+                <a class="btn-floating btn-action ml-auto bg-success " data-toggle="modal" data-target="#modalVM"><i class="fas fa-chevron-right pl-1"></i></a>
                 <div class="view overlay">
                     <span>Nombre de questions : </span> <strong>100</strong>
                 </div>
@@ -110,7 +110,7 @@
 
 
         <!-- Card -->
-        <div class="col-md-4 mb-4 ">
+        <div class="col-md-4 mb-4 wow fadeInDown">
 
             <div class="card">
 
@@ -152,7 +152,7 @@
 
 
         <!-- Card -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 wow fadeInRight">
 
             <div class="card">
 
@@ -188,9 +188,82 @@
             </div>
         </div>
         <!-- Card -->
-
-
     </div>
+
+    <!--Modal: modalVM-->
+    <div class="modal fade" id="modalVM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+
+                <!-- Modal header -->
+                <div class="text-center mb-2 mt-3">
+                    <h3>Détails du quiz</h3>
+                </div>
+                <!-- Modal header -->
+
+                <table class="table table-bordered">
+
+                    <tbody>
+                    <tr>
+                        <td  colspan="2">Nom du quiz</td>
+                        <td>Quiz node js</td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2">Date de debut (jj-mm-aaaa)</td>
+                        <td>14-02-2019</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Date de fin (jj-mm-aaaa)</td>
+                        <td>15-02-2019</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Durée (en minute)</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Nombre total de question</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Tentative maximal (en minute)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Pourcentage minimum de réussite</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Point question correcte</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Point question incorrecte</td>
+                        <td>0</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center flex-column flex-md-row">
+
+                    <a type="button" href="#" class="btn btn-success btn-rounded btn-md ml-4" data-dismiss="modal">Commencer</a>
+
+                </div>
+                    <small class="mb-3 text-danger">cliquer en déhors de cette fénêtre pour sortir</small>
+                <!--Footer-->
+
+
+                <!--Body-->
+            </div>
+            <!--/.Content-->
+
+        </div>
+    </div>
+    <!--Modal: modalVM-->
 </div>
 
 
