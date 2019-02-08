@@ -20,5 +20,9 @@ body{
 }
 
 .copyright{
+    margin-top: 70px;
+}
+
+.content-col{
     margin-top: 60px;
 }
