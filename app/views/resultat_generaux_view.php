@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="public/css/accueil_quiz.css">
     <link href="public/css/mdb.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
 </head>
 <body class="hidden-sn mdb-skin">
 <!-- /.header -->
@@ -27,48 +29,42 @@
         <h2>Rechercher un reultats</h2>
         <hr class="mb-5">
 
-        <!-- Search form -->
-        <form class="form-inline active-cyan-3 active-cyan-4">
-            <i class="fas fa-search" aria-hidden="true"></i>
-            <input class="form-control form-control-sm ml-3 w-75" id="quiz_filter" type="text" placeholder="Search" aria-label="Search">
-        </form>
-
         <br>
         <br>
 
-        <table  class="table table-bordered" cellspacing="0" width="100%">
+        <table  id="table_id" class="display" width="100%">
             <thead>
             <tr>
-                <th class="th-sm">Nom et Prenom</th>
-                <th class="th-sm">Nom du quiz</th>
-                <th class="th-sm">Statut</th>
-                <th class="th-sm">Pourcentage</th>
-                <th class="th-sm">Date</th>
+                <th >Nom et Prenom</th>
+                <th >Nom du quiz</th>
+                <th >Statut</th>
+                <th >Pourcentage</th>
+                <th >Date</th>
             </tr>
             </thead>
             <tbody>
-            <tr class="dt-material-checkbox">
+            <tr >
                 <td>Amos pascal</td>
                 <td>Node js</td>
                 <td><span class="badge badge-success fa-3x" >Pass</span></td>
                 <td>80%</td>
                 <td>2011/04/25</td>
             </tr>
-            <tr class="dt-material-checkbox">
+            <tr>
                 <td>Jean Doe</td>
                 <td>Node js</td>
                 <td><span class="badge badge-danger fa-3x" >Fail</span></td>
                 <td>80%</td>
                 <td>2011/04/25</td>
             </tr>
-            <tr class="dt-material-checkbox">
+            <tr>
                 <td>Franck Kablan</td>
                 <td>Node js</td>
                 <td><span class="badge badge-danger fa-3x" >Fail</span></td>
                 <td>80%</td>
                 <td>2011/04/25</td>
             </tr>
-            <tr  class="dt-material-checkbox">
+            <tr>
                 <td>System Architect</td>
                 <td>Edinburgh</td>
                 <td>61</td>
@@ -176,7 +172,13 @@
 <!-- script -->
 <script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
-<script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script src="public/js/datatable.js">
+
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    });
+
 
 </script>
 </body>
