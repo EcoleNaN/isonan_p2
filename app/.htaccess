@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^(.*)?$ http://localhost/isonan/isonan_mvc/acceuil.nan [L]
+
+
+# Multiple avec parametre

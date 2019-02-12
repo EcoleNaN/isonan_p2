@@ -1,0 +1,30 @@
+html,
+body,
+.view {
+  height: 100%;
+  background-image: url('../img/background.jpg'); background-repeat: no-repeat;
+  background-size: cover;}
+
+@media (max-width: 740px) {
+  .full-page-intro {
+    height: 1000px; }
+}
+
+.small_2{
+  font-size: 100%;
+  color: #2a89cb;
+}
+
+.hr_2{
+  margin-bottom: 6%;
+}
+
+.copyright{
+  margin-top: 8%;
+  color: #fff;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: #fff;
+}
